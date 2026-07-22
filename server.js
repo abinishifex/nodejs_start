@@ -12,7 +12,20 @@ res.setHeader('Content-Type', 'text/html');
 // res.write('hello, ninja ');
 // res.end();
 
-fs.readFile('./view/index.html', (err, data) => {
+let path = './view/';
+switch(req.url){
+    case '/':
+        path += 'index.html';
+        break;
+    case '/about':
+        path += 'about.html';
+        break;
+    default:
+        path += 'err.html';
+        break;
+}
+
+fs.readFile(path, (err, data) => {
     if(err){
         console.log(err);
         res.end();
