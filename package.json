@@ -1,0 +1,27 @@
+{
+  "name": "node_first",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/abinishifex/nodejs_start#readme",
+  "bugs": {
+    "url": "https://github.com/abinishifex/nodejs_start/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abinishifex/nodejs_start.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "   ",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
