@@ -4,8 +4,11 @@ const app = express();
 
 app.listen(3000);
 
+app.set('view engine', 'ejs')
+
+
 app.get('/', (req, res) => {
-    res.sendFile('./view/index.html', {root: __dirname});
+    res.render('index' , { title: 'Home' } );
 });
 
 app.get('/about', (req, res) => {
